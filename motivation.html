@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Motivation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--to shwo hamburger menu on smaller devices*/ -->
+    <meta name="viewport" content="width=device-width">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class=hamnavi>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <ul class=navi>
+                <li><a class="activemotivation" href="motivation.html">Motivation</a></li>
+                <li><a class="single" href="single.html">Single-state algorithms</a></li>
+                <li><a class="population" href="population.html">Population-based algorithms</a></li>
+                <li><a class="contact" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <h1 class=hch1>Motivation</h1>
+        <hr>
+        <div class=motirow>
+            <div class="moticolumn">
+                <h2 class="motih2">What are metaheuristics?</h2>
+                <p class=motitext>"Metaheuristics is a rather unfortunate term often used to describe a major subfield,
+                    indeed
+                    the primary subfield, of stochastic optimization. Stochastic optimization is the general class of
+                    algorithms and techniques which employ some degree of randomness to find optimal (or as optimal
+                    as possible) solutions to hard problems. Metaheuristics are the most general of these kinds of
+                    algorithms, and are applied to a very wide range of problems.</p>
+                <p class=motitext>Metaheuristics are applied to <em>I know it when I see it </em> problems. They’re
+                    algorithms used to find
+                    answers to problems when you have very little to help you: you don’t know beforehand what the
+                    optimal solution looks like, you don’t know how to go about finding it in a principled way, you
+                    have very little heuristic information to go on, and brute-force search is out of the question
+                    because
+                    the space is too large. But if you’re given a candidate solution to your problem, you can test it
+                    and
+                    assess how good it is. That is, you know a good one when you see it." (Luke, 2013)</p>
+                <p class=motitext>
+                    This application introduces various metaheuristics (taxonomy on the right) by presenting the
+                    underlying intuition as well as the algorithms.
+                    In addition, exercises for implementing the metaheuristics yourself can be downloaded for each
+                    specific algorithm. <strong>Enjoy!</strong>
+                </p>
+            </div>
+
+            <!-- from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_split_screen-->
+            <div class="moticolumn">
+                <h3 class=motih3>Taxonomy of metaheuristics</h3>
+                <img class="metaheuristic" src="images/classification.png"
+                    alt="Taxonomy of Metaheuristics" />
+                <p class=motitext2>A visual classification of the different metaheuristic algorithms.</p>
+                <!-- https://en.wikipedia.org/wiki/Metaheuristic#/media/File:Metaheuristics_classification.svg -->
+            </div>
+
+        </div>
+        <div class=motirow2>
+            <hr class=motihr>
+            <h3 class=motih2>References </h3>
+            <ul class=motiul>
+                <li>Sean Luke, 2013, Essentials of Metaheuristics, Lulu, second edition, available at:
+                    <a href=https://cs.gmu.edu/~sean/book/metaheuristics/Essentials.pdf>https://cs.gmu.edu/~sean/book/metaheuristics/Essentials.pdf</a>
+                </li>
+                <li>Salimans, T., Ho, J., Chen, X., Sidor, S., Sutskever, I.: Evolution strategies as a scalable
+                    alternative to reinforcement learning. (2017)</li>
+                    <li>All sources that are not explicitly referenced in the text are mentioned in section 6 of the report</li>
+            </ul>
+
+        </div>
+    </section>
+    <div class="footer">
+        <p>An Intuitive Introduction to Metaheuristics - Christopher Otto (2830974) - CSCU9N5</p>
+    </div>
+</body>
+
+</html>

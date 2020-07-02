@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Population-based algorithms</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--to shwo hamburger menu on smaller devices*/ -->
+    <meta name="viewport" content="width=device-width">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class=hamnavi>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <ul class=navi>
+                <li><a class="motivation" href="motivation.html">Motivation</a></li>
+                <li><a class="single" href="single.html">Single-state algorithms</a></li>
+                <li><a class="activepopulation" href="population.html">Population-based algorithms</a></li>
+                <li><a class="contact" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <h1 class=single>Population</h1>
+        <hr>
+        <p class=singletext>"Population-based methods differ from the previous methods in that they keep around a sample
+            of
+            candidate solutions rather than a single candidate solution. Each of the solutions is involved in
+            tweaking and quality assessment, but what prevents this from being just a parallel hill-climber is
+            that candidate solutions affect how other candidates will hill-climb in the quality function." (Luke, 2013)
+        </p>
+        
+        <div class=row>
+            <a class="btnes" href="es.html">
+                <div class=singleFig>
+                    <div class=picbtn>
+                        <p>Evolution strategies algorithm</p>
+                        <img id="es" src="images/es1.PNG" width="320" height="360"  alt="A picture for the Evolution Strategies algorithm."/>
+                        <!--https://en.wikipedia.org/wiki/Rastrigin_function#/media/File:Rastrigin_function.png-->
+                    </div>
+                </div>
+            </a>
+            <!--https://www.vexels.com/png-svg/preview/159257/dna-chain-sketch-->
+            <a class="btnga" href="ga.html">
+                <div class=singleFig>
+                    <div class=picbtn>
+                        <p>Genetic algorithm</p>
+                        <img id="ga" src="images/ga.png" width="320" height="360"  alt="A picture for the Genetic algorithm."/>
+                    </div>
+                </div>
+            </a>
+            <a class="btnaco" href="aco.html">
+                <div class=singleFig>
+                    <div class=picbtn>
+                        <p>Ant colony optimization algorithm</p>
+                        <img id="aco" src="images/aco.png" width="320" height="360"  alt="A picture for the Ant colony optimization algorithm."/>
+                        <!--https://de.wikipedia.org/wiki/Ameisenalgorithmus#/media/Datei:Aco_shortpath.svg-->
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>An Intuitive Introduction to Metaheuristics - Christopher Otto (2830974) - CSCU9N5</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Evolution Strategies</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <script src="script.js"></script>
+        <!-- Add icon library for download button. From: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button-->
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--to shwo hamburger menu on smaller devices*/ -->
+        <meta name="viewport" content="width=device-width">
+        <!-- My CSS -->
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <header>
+                <div class=hamnavi>
+                        <label for="toggle">&#9776;</label>
+                        <input type="checkbox" id="toggle" />
+                        <ul class=navi>
+                                <li><a class="motivation" href="motivation.html">Motivation</a></li>
+                                <li><a class="single" href="single.html">Single-state algorithms</a></li>
+                                <li><a class="activepopulation" href="population.html">Population-based
+                                                algorithms</a></li>
+                                <li><a class="contact" href="contact.html">Contact</a></li>
+                        </ul>
+                </div>
+        </header>
+        <section>
+                <div>
+                        <h1 class=hch1>Evolution strategies algorithm</h1>
+                        <hr>
+                        <div class=hcrow>
+                                <div class="hccolumn">
+                                        <h2 class=hch2>Intuition</h2>
+                                        <p class=stdtext>The picture indicates x and y axis as well as the maximum of a
+                                                fitness landscape (the rasigrin function).
+                                                By clicking the button, you can see how Evolution Strategies optimizes a
+                                                population of solutions until it reaches the
+                                                maximum on the top left corner.</p>
+                                        <br>
+
+
+
+
+                                        <h2 class=hch2>Details</h2>
+                                        <p class=stdtext>
+                                                In this process, Evolution Strategies start with a random parameter for
+                                                the mean (red dot).
+                                                The mean is then iteratively updated in the direction of solutions with
+                                                higher quality (the direction of the maximum).
+                                                The red dot indicates the current best solution.
+
+                                        </p>
+
+                                        <p class=stdtext>There are several slightly different types of Evolution
+                                                strategy algorithms. The type used in the animation is
+                                                th OpenAI Evolution Strategy.
+
+                                                <h3 class=hchh2>Pseudocode</h3>
+                                                <p class=stdtext>Below is the pseudocode that you need to implement
+                                                        OpenAI ES Evolution Strategies. It is taken from Salimans et al.
+                                                        (2017).</p>
+                                                <img class="esimag" src="images/ESALG.png" alt="Evolution Strategies pseudocode."/>
+                                </div>
+                                <div class="hccolumn">
+
+                                        <p style="text-align: center">
+                                                <img id="slide" src="images/schaffer.png" width=474 height=463 alt="Rastrigin function maximum.">
+                                        </p>
+                                        <div class=centerbuttons>
+                                                 <!--sound from http://soundbible.com/783-Click.html-->
+                                                <audio id="bigclimb" src="sound/stapler.wav"></audio>
+                                                <span id="btnSlNxt" onclick="nextSlide()">Start</span>
+                                                <span id="btnSlPrev" onclick="prevSlide()" disabled>Back</span>
+                                        </div>
+
+
+
+                                </div>
+
+                        </div>
+                </div>
+                <hr>
+                <div class=hcrow>
+
+                        <div class="hccolumn">
+                                <h2 class=hch2>Assignment</h2>
+                                <p class=stdtext>Have you grasped the intuition and the pseudocode? Then continue with
+                                        the assignment!</p>
+                                <!-- download button from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button-->
+
+                                <a href="assignments/EvolutionStrategiesAssignment.pdf"
+                                        download="Assignment-04-Evolution-Strategies">
+                                        <button class="download"><i class="fa fa-download"></i> Evolution Strategies
+                                                assignment</button>
+                                </a>
+                        </div>
+                </div>
+                </div>
+
+        </section>
+        <div class="footer">
+                <p>An Intuitive Introduction to Metaheuristics - Christopher Otto (2830974) - CSCU9N5</p>
+        </div>
+</body>
+
+</html>

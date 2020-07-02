@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Single-state algorithms</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <!--to shwo hamburger menu on smaller devices*/ -->
+        <meta name="viewport" content="width=device-width">
+        <script src="script.js"></script>
+        <!-- My CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <header>
+    <div class=hamnavi>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <ul class=navi>
+            <li><a class="motivation" href="motivation.html">Motivation</a></li>
+            <li><a class="activesingle" href="single.html">Single-state algorithms</a></li>
+            <li><a class="population" href="population.html">Population-based algorithms</a></li>
+            <li><a class="contact" href="contact.html">Contact</a></li>
+        </ul>
+    </div>  
+    </header>     
+    <section>
+        <h1 class=single>Single-state algorithms</h1>
+        <hr>
+        <p class= singletext>"All you’re given is a black box [an unknown function] [...] describing a problem that you’d
+                like to optimize. The box has a slot where you can submit a [<strong>single</strong>] candidate solution to the problem
+                [...]. Out comes the
+                assessed quality of that candidate solution." Then you change the candidate solution a little bit 
+                and check whether the quality improves. "The algorithm will typically provide a selection procedure that decides which candidate
+                solutions to retain and which to reject [...]." (Luke, 2013)</p>
+        
+        <div class=row>
+            <a class="btnhc" href="hc.html">
+                <div class=singleFig>        
+                    <div class=picbtn>
+                    <p>Hill-climbing algorithm</p>
+                    <img id="hc" src="images/hc.jpg" width="320" height="360" alt="A picture for the hill-climbing algorithm."/> 
+                    <!--https://www.pinterest.co.uk/pin/812759063974168349/--> 
+                    </div>
+                </div>
+            </a>  
+            <a class="btnsa" href="sa.html" >
+                <div class=singleFig>
+                    <div class=picbtn>
+                    <p>Simulated annealing algorithm</p>
+                    <img id="sa" src="images/sa.png" width="320" height="360" alt="A picture for the simulated annealing algorithm."/> 
+                    <!--https://au.mathworks.com/help/optim/examples/tutorial-for-the-optimization-toolbox.html-->                    
+                    </div>
+                </div>
+            </a>  
+            <a class="btntabu" href="tabu.html" >        
+                <div class=singleFig >
+                    <div class=picbtn>
+                        <p>Tabu search algorithm</p>
+                        <img id="tabu" src="images/tabu.svg" width="320" height="360"  alt="A picture for the tabu search algorithm."/>    
+                        <!--https://en.wikipedia.org/wiki/File:Max_paraboloid.svg-->
+                    </div>
+                </div>
+            </a>     
+        </div>
+   
+    </section>
+ 
+    
+    <div class="footer">
+        <p>An Intuitive Introduction to Metaheuristics - Christopher Otto (2830974) -CSCU9N5</p>
+    </div>
+</body>
+</html>

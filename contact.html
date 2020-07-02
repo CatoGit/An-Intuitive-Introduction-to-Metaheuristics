@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contact</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--to show hamburger menu on smaller devices*/ -->
+    <meta name="viewport" content="width=device-width">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class=hamnavi>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <ul class=navi>
+                <li><a class="motivation" href="motivation.html">Motivation</a></li>
+                <li><a class="single" href="single.html">Single-state algorithms</a></li>
+                <li><a class="population" href="population.html">Population-based algorithms</a></li>
+                <li><a class="activecontact" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <h1 class=hch1>Contact Form</h1>
+        <hr>
+        <h2 class=hch1>Are you a teacher that needs verified solutions for the assignments? Or do you have questions?
+            Even if you only want to leave some feedback: Please contact us! </h2>
+            <!-- taken from https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+            <div class="container">
+                <form action="contact_done.html">
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="name" placeholder="Your name..">
+
+                    <label for="lname">Email</label>
+                    <input type="text" id="lname" name="email" placeholder="Your email..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">UK</option>
+                        <option value="canada">Germany</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write your request here.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+    </section>
+    <div class="footer">
+        <p>An Intuitive Introduction to Metaheuristics - Christopher Otto (2830974) - CSCU9N5</p>
+    </div>
+</body>
+
+</html>

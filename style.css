@@ -1,0 +1,935 @@
+/* import open sans fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* reset browser styles */
+html, body {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+h1.introh {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200%;
+    padding: 0;
+    margin: 20px;
+}
+
+#metaheuristic {
+
+    width: 40%;
+    height: 40%;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+/*parts taken from https://www.w3schools.com/css/css_navbar.asp*/
+.hamnavi{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3366ff;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+ul.navi{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3366ff;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        width: 100%;
+      }
+ 
+
+  /*active tab*/
+  .activemotivation{
+    background-image: url(images/MetaphorMotivationWhite.svg);
+    background-repeat: no-repeat;
+    background-color: #000066;
+    background-size: 40px 60px;
+    background-position: left 1px top;
+}
+.activesingle {
+    background-image: url(images/MetaphorSingleWhite.svg);
+    background-repeat: no-repeat;
+    background-color: #000066;
+    background-size: 40px 60px;
+    color: white;
+}
+
+.activepopulation{
+    background-image: url(images/MetaphorPopulationWhite.svg);
+    background-repeat: no-repeat;
+    background-color: #000066;
+    background-size: 40px 60px;
+    background-position: left 5px top;
+}
+
+.activecontact{
+    background-image: url(images/MetaphorContactWhite.svg);
+    background-repeat: no-repeat;
+    background-color: #000066;
+    background-size: 40px 60px;
+    background-position: left 5px top 1px;
+}
+
+.single {
+    background-image: url(images/MetaphorSingleWhite.svg);
+    background-repeat: no-repeat;
+    background-size: 40px 60px;
+    color: white;
+}
+
+.motivation{
+    background-image: url(images/MetaphorMotivationWhite.svg);
+    background-repeat: no-repeat;
+    background-size: 40px 60px;
+    background-position: left 1px top;
+}
+
+.population{
+    background-image: url(images/MetaphorPopulationWhite.svg);
+    background-repeat: no-repeat;
+    background-size: 40px 60px;
+    background-position: left 5px top;
+}
+
+.contact{
+    background-image: url(images/MetaphorContactWhite.svg);
+    background-repeat: no-repeat;
+    background-size: 40px 60px;
+    background-position: left 5px top 1px;
+}
+
+
+.hamnavi{
+    color: white;
+}
+
+/*active tab*/
+ul.navi li a.activesingle {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 20px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  float: left;
+  }
+
+ul.navi li a.activemotivation {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    } 
+  
+
+ul.navi li a.activepopulation {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 20px;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        float: left;
+        }
+
+
+ul.navi li a.activecontact{
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 20px;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        float: right;
+}
+
+
+ul.navi li a.single {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    }
+  
+    
+ul.navi li a.motivation {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    }
+
+
+ul.navi li a.population {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 20px;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        float: left;
+        }
+
+
+ul.navi li a.contact{
+            display: block;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 50px;
+            padding-right: 20px;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            float: right;
+}
+
+ul.navi li a:hover:not(.active) {
+    background-color: #6699ff;
+    color: white;
+}
+
+.intro{
+    text-align:center;
+}
+
+
+.overview2{
+    margin: 20px;
+}
+
+.overview3{
+    margin: 40px;
+}
+
+.overview4{
+    margin: 40px;
+}
+
+.btn1{
+    margin: 10px;
+}
+
+.btn2{
+    margin: 10px;
+}
+
+.btn3{
+    margin: 10px;
+}
+
+/* button style from https://www.youtube.com/watch?v=Y5SHm53WFEk Accessed: 01.11.2019*/
+.btn1,.btn2,.btn3 {
+    border-radius: 9px;
+    color: black;
+    font-size: 100%;
+    padding: 10px 20px;
+    border: solid 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: bottom;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn1:hover  {
+    color: #ff5050;
+    border: solid #ff5050 3px;
+}
+
+.btn2:hover{
+        color: #66ff66;
+        border: solid #66ff66 3px;
+}
+
+.btn3:hover {
+    color: blue;
+    border: solid blue 3px;
+}
+
+.hamnav{
+    border-bottom: 1px solid #eaeaeb;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+label {
+    margin: 0 40px 0 0 ;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle{
+    display: none;
+}
+
+.single{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.hch1{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.motiul{
+    font-family: 'Open Sans', sans-serif;
+    word-wrap: break-word;
+}
+
+
+.motirow2{
+    width: 100%;
+}
+
+.motihr{
+  width: 99.8%;
+}
+
+.motitext {
+    padding:5px;
+    margin-left:5px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.motitext2 {
+    padding:10px;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.motih2{
+    padding:5px;
+    margin-left:5px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.download {
+    background-color: #3366ff;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+
+.download:hover {
+    background-color: #6699ff;
+  }
+
+.motih3{
+    margin-left:5px;
+    padding:5px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#vid{
+    width: 100%;
+}
+
+
+.singletext {
+    padding:5px;
+    margin-right:12px;
+    margin-left: 12px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.motitextitalic{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1em;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.metaheuristic{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+    z-index: -1;
+}
+
+.hcimag{
+    width: 75%;
+    z-index: -1;
+}
+
+.esimag{
+    width: 100%;
+    z-index: -1;
+}
+
+/* button style from https://www.youtube.com/watch?v=Y5SHm53WFEk Accessed: 01.11.2019*/
+
+
+#btnSlNxt{
+    border-radius: 9px;
+    color: black;
+    font-size: 100%;
+    padding: 10px 20px;
+    border: solid 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: bottom;
+    font-family: 'Open Sans', sans-serif;
+    background-color:none;
+    cursor: pointer;
+}
+
+#btnSlNxt:hover  {
+    color: #3366ff;
+    border: solid #3366ff 3px;
+}
+
+#btnSlPrev{
+    border-radius: 9px;
+    color: black;
+    font-size: 100%;
+    padding: 10px 20px;
+    border: solid 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: bottom;
+    font-family: 'Open Sans', sans-serif;
+    background-color:none;
+    cursor: pointer;
+}
+
+#btnSlPrev:hover  {
+    color: #3366ff;
+    border: solid #3366ff 3px;
+}
+
+.hccolumn .centerbuttons{
+    position: absolute;
+    margin-left: 325px;
+
+}
+
+/*figures*/
+.singleFig {
+    float: left;
+    width: 31.2%;
+    padding: 6px;
+    margin: 10px;
+    top: 0px;
+    border: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+
+.HCFig {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    top: 0px;
+    border: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+
+
+.picbtn {
+    padding: 1px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    border: black;
+    text-transform: uppercase;
+  }
+
+/*parts taken from http://www.corelangs.com/css/box/hover.html*/
+.picbtn:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*/
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ .row{
+    display: block;
+ }
+
+ /*from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive
+ Create two equal columns that floats next to each other */
+.hccolumn {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+.hccolumn2{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.moticolumn{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+  
+
+.hcimg{
+    padding:0px;
+    position: relative;
+    width: 624px;
+    height:545px;
+    
+}
+  /* Clear floats after the columns */
+.hcrow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+.hch2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.hchh2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.stdtext{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_footer*/
+.footer {
+   position: fixed; 
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #3366ff;
+   color: white;
+   text-align: center;
+   font-family: 'Open Sans', sans-serif;
+}
+.more{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 30%;
+}
+
+.btnviewmore1 {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.viewmore {
+    border-radius: 9px;
+    color: black;
+    font-size: 100%;
+    margin: 10px;
+    padding: 5px 5px;
+    border: solid 3px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  }
+
+p.view1 {
+    text-decoration: none;
+}
+
+.viewmore:hover {
+    color: blue;
+    border: solid blue 3px;
+}
+
+
+@keyframes animbullet {
+    0% {right: 72.2%;top:83.1%; background-color: black;cursor:pointer;}
+    10% {right:66.1%;top:64.1%; background-color: rgb(75, 5, 5);cursor:pointer;}
+        20% {right:64.1%;top:56.1%; background-color: rgb(75, 5, 5);cursor:pointer;}
+        30% {right:62.1%;top:48.1%; background-color: rgb(131, 7, 7);cursor:pointer;}
+        40% {right:60.1%;top:40.6%; background-color: rgb(165, 11, 11);cursor:pointer;}
+        50% {right:58.1%;top:34.6%; background-color: rgb(197, 17, 17);cursor:pointer;}
+        60%{right:55.1%;top:27.5%; background-color:  rgb(197, 17, 17);cursor:pointer;}
+        70%{right:53.1%;top:24.6%; background-color:  rgb(230, 15, 15);cursor:pointer;}
+        80%{right:48.5%;top:22.5%; background-color: red;cursor:pointer;}
+        90%{right:46%;top:23.2%; background-color: rgb(230, 15, 15);cursor:pointer;}
+    100%{right:48.5%;top:22.4%; background-color: red;}
+}
+
+
+.hcimg #bullet { 
+          background-color: black;
+          width: 30px; height: 30px;
+          position: absolute;
+          left: auto;
+          right:48.5%;
+          top: 22.4%;
+          border-radius: 15px;
+          animation-name: animbullet;
+          animation-duration: 6s;
+          animation-fill-mode: forwards;
+          animation-play-state: paused;
+}
+
+/*taken from https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #3366ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #6699ff;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
+
+/*For change with small screen sizes*/
+@media screen and (max-width: 1480px) {
+    .singleFig {
+        width: 100%;
+      }
+
+    .hcimg{
+        width: 380px;
+        height:281px;
+    }
+
+    
+    @keyframes animbullet {
+        0% {right: 72.2%;top:83.1%; background-color: black;cursor:pointer;}
+    10% {right:66.1%;top:64.1%; background-color: rgb(75, 5, 5);cursor:pointer;}
+        20% {right:64.1%;top:56.1%; background-color: rgb(75, 5, 5);cursor:pointer;}
+        30% {right:62.1%;top:48.1%; background-color: rgb(131, 7, 7);cursor:pointer;}
+        40% {right:60.1%;top:40.6%; background-color: rgb(165, 11, 11);cursor:pointer;}
+        50% {right:58.1%;top:34.6%; background-color: rgb(197, 17, 17);cursor:pointer;}
+        60%{right:55.1%;top:27.5%; background-color:  rgb(197, 17, 17);cursor:pointer;}
+        70%{right:53.1%;top:24.6%; background-color:  rgb(230, 15, 15);cursor:pointer;}
+        80%{right:48.5%;top:22.5%; background-color: red;cursor:pointer;}
+        90%{right:46%;top:23.2%; background-color: rgb(230, 15, 15);cursor:pointer;}
+    100%{right:48.5%;top:22.4%; background-color: red;}
+    
+    }
+
+
+    .hcimg #bullet { 
+        background-color: silver;
+        width: 15px; height: 15px;
+        position: absolute;
+        left: auto;
+        right: 48.5%;
+        top: 22.4%;
+        border-radius: 15px;
+        animation-name: animbullet;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+}
+
+    .singleFig {
+       width: 96%;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 1110px) {
+    .hccolumn .centerbuttons{
+        position: static;
+        margin-left: 100px;
+
+    }
+
+    .singleFig {
+        width: 90%;
+      }
+}
+
+@media screen and (max-width: 810px) {
+    .intro{
+        width: 100%;
+        height: 100%;
+    }
+
+    .hcimg{
+        width: 380px;
+        height:281px;
+    }
+
+    #vid{
+        width: 100%;
+
+
+    }
+
+    .singleFig {
+        width: 90%;
+      }
+    
+    .hccolumn .centerbuttons{
+        position: static;
+      
+
+    }
+
+    #slide{
+        width: 90%;
+        height:auto;
+    }
+
+    @keyframes animbullet {
+        0% {right: 72.2%;top:83.1%; background-color: black;cursor:pointer;}
+        10% {right:66.1%;top:64.1%; background-color: rgb(75, 5, 5);cursor:pointer;}
+            20% {right:64.1%;top:56.1%; background-color: rgb(75, 5, 5);cursor:pointer;}
+            30% {right:62.1%;top:48.1%; background-color: rgb(131, 7, 7);cursor:pointer;}
+            40% {right:60.1%;top:40.6%; background-color: rgb(165, 11, 11);cursor:pointer;}
+            50% {right:58.1%;top:34.6%; background-color: rgb(197, 17, 17);cursor:pointer;}
+            60%{right:55.1%;top:27.5%; background-color:  rgb(197, 17, 17);cursor:pointer;}
+            70%{right:53.1%;top:24.6%; background-color:  rgb(230, 15, 15);cursor:pointer;}
+            80%{right:48.5%;top:22.5%; background-color: red;cursor:pointer;}
+            90%{right:46%;top:23.2%; background-color: rgb(230, 15, 15);cursor:pointer;}
+        100%{right:48.5%;top:22.4%; background-color: red;}
+    
+    }
+
+    .hcimg #bullet { 
+        background-color: black;
+        width: 15px; height: 15px;
+        position: absolute;
+        left: auto;
+        right: 48.5%;
+        top:22.4%;
+        border-radius: 15px;
+        animation-name: animbullet;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+}
+
+    /*taken from https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #3366ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #6699ff;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
+
+    .hccolumn{
+        width: 100%;
+    }
+
+    .moticolumn{
+        width:100%
+    }
+
+   
+    .introh h1 {
+        font-size: 100%;
+    }
+    .btn1, .btn2, .btn3{
+        font-size: 90%;
+        padding: 4px 10px;
+    }
+
+    .icon{
+        font-size: 90%;
+        padding: 4px 10px;
+    }
+
+    label{
+        display: block;
+        cursor: pointer;
+    }
+
+    ul.navi{
+        text-align: center;
+        width: 100%;
+        display:block;
+    }
+    /* parts taken from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
+    ul.navi li a.activemotivation{
+        clear: right;
+        display: block;
+        margin: 0;
+        float: none;
+    }
+
+    ul.navi li a.activesingle{
+        clear: right;
+        display: block;
+        margin: 0;
+        float: none;
+    }
+
+    ul.navi li a.activepopulation{
+        clear: right;
+        display: block;
+        margin: 0;
+        float: none;
+    }
+    
+    ul.navi li a.activecontact{
+        clear: right;
+        display: block;
+        margin: 0;
+        float: none;
+    }
+
+    ul.navi li a.motivation{
+        clear: right;
+        display: block;
+        margin: 0;
+        float: none;
+    }
+
+    ul.navi li a.single{
+        clear: right;
+        display: block;
+        margin: 0;
+        float: none;
+    }
+
+    ul.navi li a.population{
+        clear: right;
+        display: block;
+        margin: 0;
+        float: none;
+    }
+
+    ul.navi li a.contact{
+        clear: right;
+        display: block;
+        margin: 0;
+        float: none;
+    }
+    /*based on https://www.youtube.com/watch?v=xMTs8tAapnQ*/
+    #toggle:checked + .navi{
+        display: none;
+    }
+
+    
+}

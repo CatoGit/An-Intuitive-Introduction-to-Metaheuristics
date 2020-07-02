@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Simulated annealing algorithm</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Add icon library for download button. From: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--to shwo hamburger menu on smaller devices*/ -->
+    <meta name="viewport" content="width=device-width">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <div class=hamnavi>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle" />
+                <ul class=navi>
+                    <li><a class="motivation" href="motivation.html">Motivation</a></li>
+                    <li><a class="activesingle" href="single.html">Single-state algorithms</a></li>
+                    <li><a class="population" href="population.html">Population-based
+                            algorithms</a></li>
+                    <li><a class="contact" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <div>
+                <h1 class=hch1>Simulated annealing algorithm</h1>
+                <hr>
+                <div class=hcrow>
+                    <div class="hccolumn">
+                        <h2 class=hch2>Intuition</h2>
+                        <p class=stdtext>"The idea is to initially set
+                                t [temperature] to a high number, which causes the algorithm to move to every newly-created solution regardless
+                                of how good it is. We’re doing a random walk in the space. Then t decreases slowly, eventually to
+                                0, at which point the algorithm is doing nothing more than plain Hill-Climbing." (Luke, 2013) 
+                                This way the algorithm can escape local maxima during the search for a solution. The video 
+                                shows how simulated annealing performs on
+                                the traveling salesman problem. </p>
+                        <br>
+
+
+                        <h2 class=hch2>Details</h2>
+                        <p class=stdtext>
+                                "Simulated annealing gets its name from annealing, a process of cooling molten metal. If you
+                                let metal cool rapidly, its atoms aren’t given a chance to settle into a tight lattice and are frozen in a
+                                random configuration, resulting in brittle metal. If we decrease the temperature very slowly, the
+                                atoms are given enough time to settle into a strong crystal." (Luke, 2013).
+
+                        </p>
+
+
+                            <h3 class=hchh2>Pseudocode</h3>
+                            <p class=stdtext>Below is the pseudocode that you need to implement
+                                Simulated annealing. It is taken from Luke (2013).</p>
+                            <img class="esimag" src="images/SAALG.png" alt="Evolution Strategies pseudocode." />
+                    </div>
+                    <div class="hccolumn">
+                            <h3 class=motih3>Simulated annealing for solving the traveling salesman problem</h3>
+                            <!--from: https://www.youtube.com/watch?v=SC5CX8drAtU-->
+                            <video id="vid"  src="video/simulated_annealing.mp4" controls></video>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <div class=hcrow>
+
+                <div class="hccolumn">
+                    <h2 class=hch2>Assignment</h2>
+                    <p class=stdtext>Have you grasped the intuition and the pseudocode? Then continue with
+                        the assignment!</p>
+                    <!-- download button from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button-->
+
+                    <a href="assignments/SimulatedAnnealingAssignment.pdf"
+                        download="Assignment-02-Simulated-Annealing">
+                        <button class="download"><i class="fa fa-download"></i> Simulated annealing
+                            assignment</button>
+                    </a>
+                </div>
+            </div>
+            </div>
+
+        </section>
+        <div class="footer">
+            <p>An Intuitive Introduction to Metaheuristics - Christopher Otto (2830974) - CSCU9N5</p>
+        </div>
+    </body>
+
+</html>
