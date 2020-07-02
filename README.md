@@ -1,4 +1,4 @@
-# An_Intuitive_Introduction_to_Metaheuristics
+# An Intuitive Introduction to Metaheuristics
 
 \An Intuitive Introduction to Metaheuristics" is an interactive instructional course that is available as
 a web-based multimedia application. It aims at undergraduate, postgraduate and doctoral students as
