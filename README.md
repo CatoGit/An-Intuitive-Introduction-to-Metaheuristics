@@ -8,4 +8,4 @@ and optimization. The application's goal is to provide an intuitive understandin
 metaheuristic algorithms. It is also suitable for professors and teachers who are looking for new ways
 to teach their students complex concepts.
 
-This web application was created as part of my project at University of Stirling.
+This web application was created as part of my coursework at University of Stirling.
